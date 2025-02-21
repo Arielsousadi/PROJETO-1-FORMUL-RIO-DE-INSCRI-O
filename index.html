@@ -1,25 +1,48 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>formulario</title>
+    <title>Formulário Simples</title>
 </head>
 <body>
-    <h2>formulario de inscrição</h2>
-
+    <h2>Formulário de Inscrição</h2>
+    
     <form>
-        <label for="name">name:</label><br>
-        <input type="text" id="name" name="name"><br>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome"><br><br>
 
-        <label for="email">E-mail:</label><br>
-        <input type="email" id="email" name="email"><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
 
-        <label for="telefone">Telefone:</label><br>
-        <input type="tel" id="telefone" name="telefone"><br>
+        <label for="whatsapp">WhatsApp:</label>
+        <input type="text" id="whatsapp" name="whatsapp"><br><br>
 
+        <p>Área de atuação:</p>
+        <input type="radio" id="desenvolvimento" name="area" value="Desenvolvimento">
+        <label for="desenvolvimento">Desenvolvimento</label>
 
-</form> 
+        <input type="radio" id="qa" name="area" value="Quality Assurance">
+        <label for="qa">Quality Assurance (QA)</label>
 
+        <input type="radio" id="dados" name="area" value="Analise de Dados">
+        <label for="dados">Análise de Dados</label>
+
+        <input type="radio" id="infra" name="area" value="Infraestrutura">
+        <label for="infra">Infraestrutura</label>
+
+        <br><br>
+
+        <label for="observacoes">Observações:</label><br>
+        <textarea id="observacoes" name="observacoes"></textarea>
+
+        <br><br>
+
+        <input type="checkbox" id="novidades" name="novidades">
+        <label for="novidades">Desejo receber novidades e ofertas por email.</label>
+
+        <br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
 </body>
 </html>
